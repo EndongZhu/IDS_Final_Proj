@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Agency - Start Bootstrap Theme</title>
+    <title>Analysis of Instacart Data</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -25,26 +25,25 @@
 
   </head>
 
-  <body id="page-top">
-
+    <body id="page-top">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Home</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fas fa-bars"></i>
+            Menu
+            <i class="fas fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+              <a class="nav-link js-scroll-trigger" href="#services">Data Source</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Exploratory Analysis</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+              <a class="nav-link js-scroll-trigger" href="#about">Project Pipeline</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#team">Team</a>
@@ -61,8 +60,8 @@
     <header class="masthead">
       <div class="container">
         <div class="intro-text">
-          <div class="intro-lead-in">Welcome To Our Studio!</div>
-          <div class="intro-heading text-uppercase">It's Nice To Meet You</div>
+          <div class="intro-lead-in">Which Products Will Be Purchased Again?</div>
+          <div class="intro-heading text-uppercase">Instacart Market Basket Analysis</div>
           <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
         </div>
       </div>
@@ -73,34 +72,44 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Services</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            <h2 class="section-heading text-uppercase">Data Source</h2>
+            <h3 class="section-subheading text-muted">Instacart is an American company that operates as a sometimes-same-day grocery delivery service.
+                Customers select groceries through a web application from various retailers and the order is delivered by a personal shopper.
+                To predict which products will be in a user's next order, they released a relational dataset of files describing customers' orders over time.
+                For more information, click <a href="https://tech.instacart.com/3-million-instacart-orders-open-sourced-d40d29ead6f2" target="_blank">here</a>.</h3>
           </div>
         </div>
         <div class="row text-center">
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
               <i class="fas fa-circle fa-stack-2x text-primary"></i>
-              <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
+              <i class="fas fa-database fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="service-heading">E-Commerce</h4>
-            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+            <h4 class="service-heading">Data Size</h4>
+            <p class="text-muted">The dataset is anonymized and contains a sample of over 3 million
+                grocery orders from more than 200,000 Instacart users. For each user, we provide
+                between 4 and 100 of their orders, with the sequence of products purchased in each order.</p>
           </div>
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
               <i class="fas fa-circle fa-stack-2x text-primary"></i>
-              <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+              <i class="fas fa-file-alt fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="service-heading">Responsive Design</h4>
-            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+            <h4 class="service-heading">Data Format</h4>
+            <p class="text-muted">The dataset consists of these different files: orders, products,
+                aisles, deptartments, and order_products (prior, train, test). Most of the files and
+                variable names should be self-explanatory. For more descriptions, see
+                <a href="https://gist.github.com/jeremystan/c3b39d947d9b88b3ccff3147dbcf6c6b" target="_blank">here</a>.</p>
           </div>
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
               <i class="fas fa-circle fa-stack-2x text-primary"></i>
-              <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
+              <i class="fas fa-poll fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="service-heading">Web Security</h4>
-            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+            <h4 class="service-heading">Target</h4>
+            <p class="text-muted">In this project, we will first do some exploratory analysis on the
+                dataset and then develop a model to predict which previously purchased products will
+                be in a user’s next order.</p>
           </div>
         </div>
       </div>
@@ -111,8 +120,11 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Portfolio</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            <h2 class="section-heading text-uppercase">Exploratory Analysis</h2>
+            <h3 class="section-subheading text-muted">
+                In this part, we will propose a question about the selected data, and do a series of
+                analysis about the data.
+            </h3>
           </div>
         </div>
         <div class="row">
@@ -123,11 +135,11 @@
                   <i class="fas fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
+              <img class="img-fluid" src="img/portfolio/Intro-thumbnail.jpg" alt="">
             </a>
             <div class="portfolio-caption">
-              <h4>Threads</h4>
-              <p class="text-muted">Illustration</p>
+              <h4>Introduction</h4>
+              <p class="text-muted">Ask a question.</p>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
@@ -137,11 +149,11 @@
                   <i class="fas fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/02-thumbnail.jpg" alt="">
+              <img class="img-fluid" src="img/portfolio/Accessibility-thumbnail.jpg" alt="">
             </a>
             <div class="portfolio-caption">
-              <h4>Explore</h4>
-              <p class="text-muted">Graphic Design</p>
+              <h4>Accessibility</h4>
+              <p class="text-muted">Who has access to data?</p>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
@@ -151,11 +163,11 @@
                   <i class="fas fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt="">
+              <img class="img-fluid" src="img/portfolio/Complete-thumbnail.jpg" alt="">
             </a>
             <div class="portfolio-caption">
-              <h4>Finish</h4>
-              <p class="text-muted">Identity</p>
+              <h4>Completeness</h4>
+              <p class="text-muted">Is the data complete?</p>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
@@ -165,11 +177,11 @@
                   <i class="fas fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/04-thumbnail.jpg" alt="">
+              <img class="img-fluid" src="img/portfolio/Coherence-thumbnail.jpg" alt="">
             </a>
             <div class="portfolio-caption">
-              <h4>Lines</h4>
-              <p class="text-muted">Branding</p>
+              <h4>Coherence</h4>
+              <p class="text-muted">Is the data coherent?</p>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
@@ -179,11 +191,11 @@
                   <i class="fas fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/05-thumbnail.jpg" alt="">
+              <img class="img-fluid" src="img/portfolio/Exploration-thumbnail.jpg" alt="">
             </a>
             <div class="portfolio-caption">
-              <h4>Southwest</h4>
-              <p class="text-muted">Website Design</p>
+              <h4>Exploration</h4>
+              <p class="text-muted">Exploratory analysis</p>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
@@ -193,11 +205,11 @@
                   <i class="fas fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/06-thumbnail.jpg" alt="">
+              <img class="img-fluid" src="img/portfolio/Next-thumbnail.jpg" alt="">
             </a>
             <div class="portfolio-caption">
-              <h4>Window</h4>
-              <p class="text-muted">Photography</p>
+              <h4>Next</h4>
+              <p class="text-muted">Future work</p>
             </div>
           </div>
         </div>
@@ -209,8 +221,8 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">About</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            <h2 class="section-heading text-uppercase">Project Pipeline</h2>
+            <h3 class="section-subheading text-muted">In this part, we will demonstrate the pipeline of our project</h3>
           </div>
         </div>
         <div class="row">
@@ -218,65 +230,65 @@
             <ul class="timeline">
               <li>
                 <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="img/about/1.jpg" alt="">
+                  <img class="rounded-circle img-fluid" src="img/about/head.jpg" alt="">
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
-                    <h4>2009-2011</h4>
-                    <h4 class="subheading">Our Humble Beginnings</h4>
+                    <h4>Propose A Question</h4>
                   </div>
                   <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                    <p class="text-muted">
+                        Try to ask a question about the data that can be solved.
+                    </p>
                   </div>
                 </div>
               </li>
               <li class="timeline-inverted">
                 <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="img/about/2.jpg" alt="">
+                  <img class="rounded-circle img-fluid" src="img/about/Analysis.jpg" alt="">
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
-                    <h4>March 2011</h4>
-                    <h4 class="subheading">An Agency is Born</h4>
+                    <h4>Data Quality Analysis</h4>
                   </div>
                   <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                    <p class="text-muted">
+                        Analyze the quality of data from different perspectives: Accessibility, Completeness, and Coherence.
+                    </p>
                   </div>
                 </div>
               </li>
               <li>
                 <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="img/about/3.jpg" alt="">
+                  <img class="rounded-circle img-fluid" src="img/about/Exploratory.jpg" alt="">
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
-                    <h4>December 2012</h4>
-                    <h4 class="subheading">Transition to Full Service</h4>
-                  </div>
+                    <h4>Data Exploratory Analysis</h4>
+                </div>
                   <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                    <p class="text-muted">Do some exploratory analysis on the data that can help solve the problem.</p>
                   </div>
                 </div>
               </li>
               <li class="timeline-inverted">
                 <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="img/about/4.jpg" alt="">
+                  <img class="rounded-circle img-fluid" src="img/about/Prediction.jpg" alt="">
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
-                    <h4>July 2014</h4>
-                    <h4 class="subheading">Phase Two Expansion</h4>
+                    <h4>Reorder Prediction</h4>
                   </div>
                   <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                    <p class="text-muted">Develop a machine learning model to predict reorder items. Launching soon!</p>
                   </div>
                 </div>
               </li>
               <li class="timeline-inverted">
                 <div class="timeline-image">
-                  <h4>Be Part
-                    <br>Of Our
-                    <br>Story!</h4>
+                  <h4>Deploy
+                    <br>An Interactive
+                    <br>Application!</h4>
                 </div>
               </li>
             </ul>
@@ -291,15 +303,13 @@
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
           </div>
         </div>
         <div class="row">
           <div class="col-sm-4">
             <div class="team-member">
-              <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
-              <h4>Kay Garland</h4>
-              <p class="text-muted">Lead Designer</p>
+              <h4>Dahua Gan</h4>
+              <p class="text-muted">Team Member</p>
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
                   <a href="#">
@@ -321,9 +331,8 @@
           </div>
           <div class="col-sm-4">
             <div class="team-member">
-              <img class="mx-auto rounded-circle" src="img/team/2.jpg" alt="">
-              <h4>Larry Parker</h4>
-              <p class="text-muted">Lead Marketer</p>
+              <h4>Endong Zhu</h4>
+              <p class="text-muted">Team Member</p>
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
                   <a href="#">
@@ -345,9 +354,8 @@
           </div>
           <div class="col-sm-4">
             <div class="team-member">
-              <img class="mx-auto rounded-circle" src="img/team/3.jpg" alt="">
-              <h4>Diana Pertersen</h4>
-              <p class="text-muted">Lead Developer</p>
+              <h4>Keyi Yu</h4>
+              <p class="text-muted">Team Member</p>
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
                   <a href="#">
@@ -367,10 +375,28 @@
               </ul>
             </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+          <div class="col-sm-4">
+            <div class="team-member">
+              <h4>Mengyang Lv</h4>
+              <p class="text-muted">Team Member</p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -381,24 +407,18 @@
       <div class="container">
         <div class="row">
           <div class="col-md-3 col-sm-6">
+          </div>
+          <div class="col-md-3 col-sm-6">
             <a href="#">
-              <img class="img-fluid d-block mx-auto" src="img/logos/envato.jpg" alt="">
+              <img class="img-fluid d-block mx-auto" src="img/logos/CMU.jpg" alt="" text-align="center">
             </a>
           </div>
           <div class="col-md-3 col-sm-6">
             <a href="#">
-              <img class="img-fluid d-block mx-auto" src="img/logos/designmodo.jpg" alt="">
+              <img class="img-fluid d-block mx-auto" src="img/logos/SCS.png" alt="">
             </a>
           </div>
           <div class="col-md-3 col-sm-6">
-            <a href="#">
-              <img class="img-fluid d-block mx-auto" src="img/logos/themeforest.jpg" alt="">
-            </a>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <a href="#">
-              <img class="img-fluid d-block mx-auto" src="img/logos/creative-market.jpg" alt="">
-            </a>
           </div>
         </div>
       </div>
@@ -410,7 +430,7 @@
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">Contact Us</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            <h3 class="section-subheading text-muted">Feel free to contact us!</h3>
           </div>
         </div>
         <div class="row">
@@ -454,7 +474,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <span class="copyright">Copyright &copy; Your Website 2018</span>
+            <span class="copyright">Copyright &copy; CMU-IDS 2018</span>
           </div>
           <div class="col-md-4">
             <ul class="list-inline social-buttons">
@@ -505,18 +525,24 @@
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                  <h2 class="text-uppercase">Introduction</h2>
+                  <p class="item-intro text-muted">
+                      In this part, we are going to ask a question about the data that can be solved later.
+                  </p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/Intro-full.jpg" alt="">
+                  <p>
+                      There exists a general trend that online shopping becomes more and more popular. The quality of recommendation for customers is very significant to the success of an online store or platform. Good recommendation system can provide a wonderful shopping experience, let customers get indulged in the fun of online shopping, so that platform can make more profits. For this project, we use the Instacart dataset, which contains a sample of over 3 million grocery orders from more than 200,000 Instacart users. On one hand, we do analysis of the data, include exploratory analysis, data quality analysis, statistic analysis, and visual analysis. For visual analysis, we use tableau and d3js to analyze the relationship between customers, products, orders and reorders. On the other hand, we will build an engine to predict which product will be reordered and give recommendations to users. Some kernels we are experimenting on include collaborative filtering, lightGBMand K-means clustering. We will also build a backend database server and implement the interactive recommendation on the final website.
+                  </p>
+                  <p>
+                      We want to know for a user, which product in his / her previous shopping list, he will buy again. It is a practical problem since shopping platform can do recommendation base on that prediction in order to make more profit.
+                  </p>
                   <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Threads</li>
-                    <li>Category: Illustration</li>
+                    <li>Date: November 2018</li>
+                    <li>Category: Introduction</li>
                   </ul>
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fas fa-times"></i>
-                    Close Project</button>
+                    Close</button>
                 </div>
               </div>
             </div>
@@ -539,18 +565,20 @@
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/02-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                  <h2 class="text-uppercase">Accessibility</h2>
+                  <p class="item-intro text-muted">Who has access to the data?</p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/Accessibility-full.jpg" alt="">
+                  <p>We got the data from the official website of Instacart. (Link for the dataset : <a href="https://www.instacart.com/datasets/grocery-shopping-2017" target="_blank">here</a>.) They collected a relational set of files describing customers' orders over time. Concretely, dataset contains a sample of over 3 million grocery orders from more than 200,000 Instacart users. For each user, less than a hundred their orders were listed, with the sequence of products purchased in each order. Datasets also include the week and hour of day the order was placed, and a relative measure of time between orders.</p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/accessibility_0.png" alt="">
+                  <p>Actually all the people have the access to the data for research and non-commercial usage. Instacart also want people help them to develop better recommendation system.</p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/accessibility_1.png" alt="">
                   <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Explore</li>
-                    <li>Category: Graphic Design</li>
+                    <li>Date: November 2018</li>
+                    <li>Category: Accessibility</li>
                   </ul>
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fas fa-times"></i>
-                    Close Project</button>
+                    Close</button>
                 </div>
               </div>
             </div>
@@ -573,18 +601,28 @@
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/03-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                  <h2 class="text-uppercase">Completeness</h2>
+                  <p class="item-intro text-muted">Is data complete?</p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/Complete-full.jpg" alt="">
+                  <p>
+                      Yes, this data is basically complete. We can find following attributes from 7 different tables: For every order, there are user_id, order_id, order_hour, order_weekday, days_since_prior_order and id for all products in the orders provided. With product_id, we can find product_name, id and name of products’aisle, id and name of products’department. Most importantly, we get a bool attribute present whether a product in an order was reordered after that, so that we can build model to predict for a new customer, which its previous ordered product will be reordered, and then give recommendation. To verify the completeness of the data, we check following items: whether product information and order information and user_id exist for every order, whether every product has a valid name and aisle / department id, whether every aisle_id has valid aisle name and whether every department_id has valid department name. Basically, all the checks are passed, only a few unclearness about the meaning of data. For aisle name and department name, they add “other” and missing as a special name to maintain data completeness, as shown in figure 1, missing and other value contains 5.19% and 1.10% of all products.
+                  </p>
+                  <div class='tableauPlaceholder' id='viz1543346214201' style='position: relative'>
+                      <noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ID&#47;IDS-data-cleansing-1&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a>
+                      </noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='IDS-data-cleansing-1&#47;Dashboard1' /><param name='tabs' value='no' />
+                          <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ID&#47;IDS-data-cleansing-1&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' />
+                          <param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object>
+                  </div>
+                  <p>
+                      Therefore, we just remove products with that special aisle/department name since they are not meaningful. For attribute days_since_prior_order, it the order is a user’s first order shown in the dataset, this attribute is empty. Actually these empty data has no meaning, so we just fill in them with zero.
+                  </p>
                   <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Finish</li>
-                    <li>Category: Identity</li>
+                    <li>Date: November 2018</li>
+                    <li>Category: Completeness</li>
                   </ul>
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fas fa-times"></i>
-                    Close Project</button>
+                    Close</button>
                 </div>
               </div>
             </div>
@@ -607,18 +645,30 @@
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/04-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                  <h2 class="text-uppercase">Coherence</h2>
+                  <p class="item-intro text-muted">
+                      Does the data make sense relative to itself? Does it match our expectations? Is the data is distributed across its possible values in a way that makes sense?
+                  </p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/Coherence-full.jpg" alt="">
+                  <p>
+                      The data we got has been cleaned and well formed, so it makes sense relative to itself very well. We verify the most important issue: whether a product is reordered by a user. On one hand, we can get it directly from attribute reordered. On the other hand, we compute it by grouping all the orders based on user. And then for all the orders from single user, we can find out which products are reordered, and which are not. We compare results get from two methods and find data is relative to itself. This result just matches our expectations.
+                  </p>
+                  <p>
+                      The data distribution looks make sense for us. We first check reorder rate. In sampled training data, 828824 products (accumulate counted) was reordered while 555793 products are not. More than half products are reordered just in accordance to people’s shopping style. Then we check distribution of orders on different time. From figure 2, we see that people place most order on Sunday. Maybe due to people have more time on Sunday to do shopping. And more orders are placed during daytime, from 9am to 5pm. We guess that is because people have computers opened during work hours, so they have more chance to place order during then.
+                  </p>
+                  <div class='tableauPlaceholder' id='viz1543348338983' style='position: relative'>
+                      <noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ID&#47;IDS-Data-Cleansing-2_0&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript>
+                      <object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='IDS-Data-Cleansing-2_0&#47;Dashboard1' /><param name='tabs' value='no' />
+                          <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ID&#47;IDS-Data-Cleansing-2_0&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' />
+                          <param name='display_spinner' value='yes' /> <param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object>
+                  </div>
                   <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Lines</li>
-                    <li>Category: Branding</li>
+                    <li>Date: November 2018</li>
+                    <li>Category: Coherence</li>
                   </ul>
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fas fa-times"></i>
-                    Close Project</button>
+                    Close</button>
                 </div>
               </div>
             </div>
@@ -641,18 +691,25 @@
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                  <h2 class="text-uppercase">Exploration</h2>
+                  <p class="item-intro text-muted">Exploratory analysis of the data</p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/Exploration-full.jpg" alt="">
+                  <p>
+                      The fundamental exploratory analysis is done on the products. We calculate the reorder rate according to the transaction data, and categorized products in terms of department and aisle. As is depicted in the following figure, products in the department in daily eggs are most possible ones to be bought again. This is quite understandable since people will have a periodic requirement for products like eggs, milk, butter, and they are very likely to choose the same brand. The least possible department is personal care, including skincare, first aid, etc. It’s also reasonable since these products are not so frequently needed, and people can choose different kinds of brand, or drug types.
+                  </p>
+                  <div class='tableauPlaceholder' id='viz1543350780063' style='position: relative'>
+                      <noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ID&#47;IDS-Explore-1_0&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript>
+                      <object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='IDS-Explore-1_0&#47;Dashboard1' /><param name='tabs' value='no' />
+                          <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ID&#47;IDS-Explore-1_0&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' />
+                          <param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object>
+                  </div>
                   <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Southwest</li>
-                    <li>Category: Website Design</li>
+                    <li>Date: November 2018</li>
+                    <li>Category: Exploration</li>
                   </ul>
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fas fa-times"></i>
-                    Close Project</button>
+                    Close</button>
                 </div>
               </div>
             </div>
@@ -675,18 +732,19 @@
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/06-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                  <h2 class="text-uppercase">Next</h2>
+                  <p class="item-intro text-muted">Future work.</p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/Next-full.jpg" alt="">
+                  <p>
+                      However, we only consider the basic attributes with respect to products, ignoring the customer behavior, habits, and other possible features to predict which item will they buy again. In the next step, we would like to build an advanced machine learning model that can help better predict the result, and we will embed the predicting model into our website to to illustrate a demo on predicting reordering behavior.
+                  </p>
                   <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Window</li>
-                    <li>Category: Photography</li>
+                    <li>Date: November 2018</li>
+                    <li>Category: Next</li>
                   </ul>
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fas fa-times"></i>
-                    Close Project</button>
+                    Close</button>
                 </div>
               </div>
             </div>
@@ -709,6 +767,31 @@
     <!-- Custom scripts for this template -->
     <script src="js/agency.min.js"></script>
 
+    <!-- Scripts for Tableau -->
+    <script type='text/javascript'>
+        var divElement = document.getElementById('viz1543346214201');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        vizElement.style.width='100%';vizElement.style.height='1500px';
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+    <script type='text/javascript'>
+        var divElement = document.getElementById('viz1543348338983');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        vizElement.style.width='100%';vizElement.style.height='800px';
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+    <script type='text/javascript'>
+        var divElement = document.getElementById('viz1543350780063');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        vizElement.style.width='100%';vizElement.style.height='1000px';
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
   </body>
 
 </html>
