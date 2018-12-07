@@ -62,7 +62,7 @@
         <div class="intro-text">
           <div class="intro-lead-in">Which Products Will Be Purchased Again?</div>
           <div class="intro-heading text-uppercase">Instacart Market Basket Analysis</div>
-          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="predict.html">Start Prediction</a>
         </div>
       </div>
     </header>
@@ -194,8 +194,8 @@
               <img class="img-fluid" src="img/portfolio/Exploration-thumbnail.jpg" alt="">
             </a>
             <div class="portfolio-caption">
-              <h4>Exploration</h4>
-              <p class="text-muted">Exploratory analysis</p>
+              <h4>Exploratory Analysis 1</h4>
+              <p class="text-muted">Product analysis.</p>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
@@ -208,8 +208,8 @@
               <img class="img-fluid" src="img/portfolio/Next-thumbnail.jpg" alt="">
             </a>
             <div class="portfolio-caption">
-              <h4>Next</h4>
-              <p class="text-muted">Future work</p>
+              <h4>Exploratory Analysis 2</h4>
+              <p class="text-muted">User analysis.</p>
             </div>
           </div>
         </div>
@@ -280,15 +280,15 @@
                     <h4>Reorder Prediction</h4>
                   </div>
                   <div class="timeline-body">
-                    <p class="text-muted">Develop a machine learning model to predict reorder items. Launching soon!</p>
+                    <p class="text-muted">Develop a machine learning model to predict reorder items.</p>
                   </div>
                 </div>
               </li>
               <li class="timeline-inverted">
                 <div class="timeline-image">
-                  <h4>Deploy
-                    <br>An Interactive
-                    <br>Application!</h4>
+                  <h4><a style="color:white" href="predict.html">Start
+                    <br>Prediction
+                    <br>Now!</a></h4>
                 </div>
               </li>
             </ul>
@@ -377,7 +377,7 @@
           </div>
           <div class="col-sm-4">
             <div class="team-member">
-              <h4>Mengyang Lv</h4>
+              <h4>Mengyang Lyu</h4>
               <p class="text-muted">Team Member</p>
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
@@ -691,11 +691,27 @@
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Exploration</h2>
-                  <p class="item-intro text-muted">Exploratory analysis of the data</p>
+                  <h2 class="text-uppercase">Exploratory Analysis 1</h2>
+                  <p class="item-intro text-muted">Product analysis.</p>
                   <img class="img-fluid d-block mx-auto" src="img/portfolio/Exploration-full.jpg" alt="">
                   <p>
-                      The fundamental exploratory analysis is done on the products. We calculate the reorder rate according to the transaction data, and categorized products in terms of department and aisle. As is depicted in the following figure, products in the department in daily eggs are most possible ones to be bought again. This is quite understandable since people will have a periodic requirement for products like eggs, milk, butter, and they are very likely to choose the same brand. The least possible department is personal care, including skincare, first aid, etc. It’s also reasonable since these products are not so frequently needed, and people can choose different kinds of brand, or drug types.
+                      In this section, we would like to get a fundamental understanding of the data,
+                      especially how it can be related to our main question: predict the reorder
+                      behavior of a certain user.The exploratory analysis will consider two aspects:
+                      users and items. Since orders can be considered as the interaction between
+                      customers and products they buy, it’s necessary to consider the patterns via
+                      historical data with respect to both of them.
+                  </p>
+                  <p>
+                      For products exploratory, we calculate the reorder rate according to the
+                      transaction data, and categorized products in terms of department and aisle.
+                      As is depicted in the figure, products in the department in daily eggs are
+                      most possible ones to be bought again. This is quite understandable since
+                      people will have a periodic requirement for products like eggs, milk, butter,
+                       and they are very likely to choose the same brand. The least possible
+                       department is personal care, including skincare, first aid, etc. It’s also
+                       reasonable since these products are not so frequently needed, and people can
+                       choose different kinds of brand, or drug types.
                   </p>
                   <div class='tableauPlaceholder' id='viz1543350780063' style='position: relative'>
                       <noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ID&#47;IDS-Explore-1_0&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript>
@@ -703,6 +719,17 @@
                           <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ID&#47;IDS-Explore-1_0&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' />
                           <param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object>
                   </div>
+                  <p>
+                    For products exploratory, we calculate the reorder rate according to the
+                    transaction data, and categorized products in terms of department and aisle.
+                    As is depicted in the figure, products in the department in daily eggs are most
+                    possible ones to be bought again. This is quite understandable since people
+                    will have a periodic requirement for products like eggs, milk, butter, and
+                    they are very likely to choose the same brand. The least possible department
+                    is personal care, including skincare, first aid, etc. It’s also reasonable
+                    since these products are not so frequently needed, and people can choose
+                    different kinds of brand, or drug types.
+                  </p>
                   <ul class="list-inline">
                     <li>Date: November 2018</li>
                     <li>Category: Exploration</li>
@@ -732,15 +759,52 @@
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Next</h2>
-                  <p class="item-intro text-muted">Future work.</p>
+                  <h2 class="text-uppercase">Exploratory Analysis 2</h2>
+                  <p class="item-intro text-muted">User analysis.</p>
                   <img class="img-fluid d-block mx-auto" src="img/portfolio/Next-full.jpg" alt="">
+                  <div class='tableauPlaceholder' id='viz1543981512996' style='position: relative'>
+                      <noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;id&#47;ids-intro-2&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript>
+                      <object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='ids-intro-2&#47;Dashboard1' /><param name='tabs' value='no' />
+                          <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;id&#47;ids-intro-2&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' />
+                          <param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' />
+                      </object>
+                  </div>
                   <p>
-                      However, we only consider the basic attributes with respect to products, ignoring the customer behavior, habits, and other possible features to predict which item will they buy again. In the next step, we would like to build an advanced machine learning model that can help better predict the result, and we will embed the predicting model into our website to to illustrate a demo on predicting reordering behavior.
+                      The figure above explains for the correctness of data, whereas the following
+                      figure can be used to track the detailed order history of a specific user,
+                      which can be quite inspiring for us to find one’s potential purchase pattern.
+                      We select 100 users here as our demo. In the scatter plot, the x-axis stands
+                      for average items a user buys per order, and the y-axis stands for the total
+                      orders of a user. Moreover, the scatter plot is also act as a filter to choose
+                       the user that we concern about. In the bar plot,  we calculate the overall
+                       bought times of different products and sort them in descending order. In the
+                       color table, each row stands for a product, and the column stands for the
+                       order number in temporal sequence, where a larger number stands for a later
+                       time of order. This dashboard can easily track the history of a specific
+                       user’s orders. For example, for the user with id 30 (in the leftmost of the
+                       scatter plot), we can see that the most frequent items he bought is “smart
+                       water”. However, it doesn’t mean he will most likely to purchase it in the
+                       next order. We surprisingly find that in the most recent two orders, he
+                       purchased “distilled water”, which is regarded as a cheap substitute for
+                       “smart water”. Therefore, it is more probable for him to reorder “distilled
+                       water” since his habits might have changed.
+                  </p>
+                  <div class='tableauPlaceholder' id='viz1543982505563' style='position: relative'>
+                      <noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;id&#47;ids-intro-3_0&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='ids-intro-3_0&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;id&#47;ids-intro-3_0&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' />
+                      </object>
+                  </div>
+                  <p>
+                      Moreover, basic prediction rules can be concluded from the exploratory analysis. For instance, if we observe that a person has buy a product, and that product has a reorder rate higher than 60%, we predict this person will reorder that product. Another rule can be: if a person buy and reorder a product in the two most recent orders, that product will be reordered next time.
+                  </p>
+                  <p>
+                      However, predicting reorder behavior via exploratory analysis is somehow limited. First, the heuristics we generated can be too general, and sometimes it can contribute to significant bias to users who do not confirm the heuristics. Second, If we make prediction via the visualization result manually, it can be a waste of time and human efforts. Third, we only analyze users behavior and item attributes separately. Sometimes important clues for a more accurate prediction can only be observed when we consider them together.
+                  </p>
+                  <p>
+                      To solve the issues mentioned above, we have to develop an automatic prediction model that can take both users and items into account. Therefore, in the next section, we would like to build an advanced machine learning model that can help better predict the result, putting users ordering history and the attributes of products as features, so as to consider their interaction. We will embed results generated from the machine learning model into our website to to illustrate a demo on predicting reorder behavior.
                   </p>
                   <ul class="list-inline">
                     <li>Date: November 2018</li>
-                    <li>Category: Next</li>
+                    <li>Category: Analysis</li>
                   </ul>
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fas fa-times"></i>
@@ -788,6 +852,24 @@
         var divElement = document.getElementById('viz1543350780063');
         var vizElement = divElement.getElementsByTagName('object')[0];
         vizElement.style.width='100%';vizElement.style.height='1000px';
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+    <script type='text/javascript'>
+        var divElement = document.getElementById('viz1543981512996');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';
+        vizElement.style.width='100%';vizElement.style.minHeight='587px';
+        vizElement.style.maxHeight='887px';vizElement.style.height='800px';
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+    <script type='text/javascript'>
+        var divElement = document.getElementById('viz1543982505563');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        vizElement.style.width='100%';vizElement.style.height='1200px';
         var scriptElement = document.createElement('script');
         scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
         vizElement.parentNode.insertBefore(scriptElement, vizElement);
